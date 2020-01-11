@@ -1,7 +1,9 @@
 ---
 templateKey: index-page
 title: Vi ska gifta oss!
-subtitle: Bröllop 5 september 2020
+subtitle: >-
+  Ni är hjärtlig inbjudna till vår vigsel på Tängsta gård lördagen den 5:e
+  september 2020
 titleimage: /img/titleimage.jpg
 mainpitch:
   description: >

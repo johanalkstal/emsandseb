@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-title: Emelie och Sebastian ska gifta sig
+title: Vi ska gifta oss!
 subtitle: Bröllop 5 september 2020
 titleimage: /img/titleimage.jpg
 mainpitch:

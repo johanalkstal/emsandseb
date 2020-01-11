@@ -6,7 +6,7 @@ import Layout from '../components/Layout'
 import Features from '../components/Features'
 
 export const IndexPageTemplate = ({
-  image,
+  titleimage,
   title,
   heading,
   subheading,
@@ -19,7 +19,7 @@ export const IndexPageTemplate = ({
         className="full-width-image margin-top-0"
         style={{
           backgroundImage: `url(${
-            !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+            !!titleimage.childImageSharp ? titleimage.childImageSharp.fluid.src : titleimage
             })`,
           backgroundPosition: `top left`,
           backgroundAttachment: `fixed`,

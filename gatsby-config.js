@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Emelie och Sebastian',
     description:
-      'Emelie och Sebastian ska gifta sig',
+      'Emelie och Sebastian ska gifta sig den 5 september 2020!',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

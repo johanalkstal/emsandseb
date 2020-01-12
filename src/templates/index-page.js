@@ -5,11 +5,6 @@ import EmailForm from '../components/EmailForm'
 import Layout from '../components/Layout'
 
 export class IndexPageTemplate extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { isValidated: false }
-  }
-
   render() {
     const {
       form,

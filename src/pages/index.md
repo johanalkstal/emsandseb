@@ -1,7 +1,9 @@
 ---
 templateKey: index-page
-title: Emelie och Sebastian ska gifta sig
-subtitle: Bröllop 5 september 2020
+title: Vi ska gifta oss!
+subtitle: >-
+  Ni är hjärtlig inbjudna till vår vigsel på Tängsta gård lördagen den 5:e
+  september 2020
 titleimage: /img/titleimage.jpg
 form:
   title: Meddela oss om du kan närvara eller inte genom att fyll i ditt namn nedan

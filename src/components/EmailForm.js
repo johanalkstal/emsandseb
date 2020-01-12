@@ -41,6 +41,19 @@ class EmailForm extends React.Component {
 
     return (
       <div>
+        <div hidden>
+          <form
+            name="rsvp"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+          >
+            <input name="bot-field" />
+            <input name="name" />
+            <input name="attending" />
+            <input name="food" />
+            <input name="allergies" />
+          </form>
+        </div>
         <p>{form.title}</p>
         <form
           name="rsvp"

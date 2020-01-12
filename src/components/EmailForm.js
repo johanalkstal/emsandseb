@@ -50,6 +50,7 @@ class EmailForm extends React.Component {
             <input name="bot-field" />
             <input name="name" />
             <input name="attending" />
+            <input name="message" />
             <input name="food" />
             <input name="allergies" />
           </form>

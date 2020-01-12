@@ -5,6 +5,8 @@ subtitle: >-
   Ni är hjärtlig inbjudna till vår vigsel på Tängsta gård lördagen den 5:e
   september 2020
 titleimage: /img/titleimage.jpg
+form:
+  title: Meddela oss om du kan närvara eller inte genom att fyll i ditt namn nedan
 mainpitch:
   description: >
     Kaldi is the coffee store for everyone who believes that great coffee

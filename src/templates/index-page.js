@@ -1,9 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+import showdown from 'showdown'
 import EmailForm from '../components/EmailForm'
 import Layout from '../components/Layout'
 import PageHeader from '../components/PageHeader'
+
+const converter = new showdown.Converter()
 
 export class IndexPageTemplate extends React.Component {
   render() {
@@ -24,27 +27,14 @@ export class IndexPageTemplate extends React.Component {
           titleimage={titleimage}
           subtitle={subtitle}
         />
-        <section className="section section--gradient">
-          <div className="container">
-            <div className="section">
-              <div className="columns">
-                <div className="column is-10 is-offset-1">
-                  <div className="content">
-                    <EmailForm form={form} />
-                    <div className="content">
-                      <div className="tile">
-                        <h1 className="title">{ceremony.title}</h1>
-                      </div>
-                      <div className="tile">
-                        {ceremony.content}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <EmailForm form={form} />
+        <h2>{ceremony.title}</h2>
+        <div dangerouslySetInnerHTML={{ __html: converter.makeHtml(ceremony.content) }}>
+        </div>
+        <h2>{location.title}</h2>
+        <div dangerouslySetInnerHTML={{ __html: converter.makeHtml(location.content) }}></div>
+        <h2>{stay.title}</h2>
+        <div dangerouslySetInnerHTML={{ __html: converter.makeHtml(stay.content) }}></div>
       </div>
     )
   }
@@ -54,7 +44,9 @@ IndexPageTemplate.propTypes = {
   titleimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   subtitle: PropTypes.string,
-  mainpitch: PropTypes.object,
+  ceremony: PropTypes.object,
+  location: PropTypes.object,
+  stay: PropTypes.object,
 }
 
 const IndexPage = ({ data }) => {
@@ -87,33 +79,33 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query IndexPageTemplate {
-    markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
-      frontmatter {
-        form {
+          markdownRemark(frontmatter: {templateKey: {eq: "index-page" } }) {
+          frontmatter {
+          form {
           title
         }
         title
         titleimage {
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
+          fluid(maxWidth: 2048, quality: 100) {
+          ...GatsbyImageSharpFluid
         }
-        subtitle
+        }
+      }
+      subtitle
         ceremony {
           title
           content
-        }
+      }
         location {
           title
           content
-        }
+      }
         stay {
           title
           content
-        }
       }
     }
   }
+}
 `

@@ -67,8 +67,9 @@ const IndexPage = ({ data }) => {
         titleimage={frontmatter.titleimage}
         title={frontmatter.title}
         subtitle={frontmatter.subtitle}
-        mainpitch={frontmatter.mainpitch}
-        intro={frontmatter.intro}
+        ceremony={frontmatter.ceremony}
+        location={frontmatter.location}
+        stay={frontmatter.stay}
       />
     </Layout>
   )
@@ -100,13 +101,17 @@ export const pageQuery = graphql`
           }
         }
         subtitle
-        mainpitch {
+        ceremony {
           title
-          description
+          content
         }
-        intro {
-          heading
-          description
+        location {
+          title
+          content
+        }
+        stay {
+          title
+          content
         }
       }
     }

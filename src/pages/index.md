@@ -7,26 +7,17 @@ subtitle: >-
 titleimage: /img/topp-bild-till-hemsida.jpg
 form:
   title: Meddela oss om du kan närvara eller inte genom att fyll i ditt namn nedan
-mainpitch:
-  description: |+
+ceremony:
+  title: Vigsel och middag
 
-  title: Titel
-intro:
-  description: |+
+  content: Text
+location:
+  title: Hitta till Tängsta Gård
 
-  heading: Titel
-main:
-  description: |+
+  content: Text
+stay:
+  title: Boende
 
-  heading: Titel
-  image1:
-    alt: bild
-    image: /img/products-grid3.jpg
-  image2:
-    alt: A green cup of a coffee on a wooden table
-    image: /img/products-grid2.jpg
-  image3:
-    alt: Coffee beans
-    image: /img/products-grid1.jpg
+  content: Text
 ---
 

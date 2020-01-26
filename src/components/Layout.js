@@ -12,7 +12,7 @@ const TemplateWrapper = ({ children }) => {
         <html lang="sv" />
         <title>{title}</title>
         <meta name="description" content={description} />
-
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Dancing+Script|Montserrat&display=swap" rel="stylesheet" />
         {/* <meta property="og:type" content="business.business" />
         <meta property="og:title" content={title} />
         <meta property="og:url" content="/" />

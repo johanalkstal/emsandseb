@@ -1,69 +1,29 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import EmailForm from '../components/EmailForm'
 import Layout from '../components/Layout'
+import PageHeader from '../components/PageHeader'
 
 export class IndexPageTemplate extends React.Component {
   render() {
     const {
-      form,
       titleimage,
       title,
       subtitle,
-      mainpitch,
+      form,
+      ceremony,
+      location,
+      stay,
     } = this.props
 
     return (
       <div>
-        <div
-          className="full-width-image margin-top-0"
-          style={{
-            backgroundImage: `url(${
-              !!titleimage.childImageSharp ? titleimage.childImageSharp.fluid.src : titleimage
-              })`,
-            backgroundPosition: `top left`,
-            backgroundAttachment: `fixed`,
-          }}
-        >
-          <div
-            style={{
-              display: 'flex',
-              height: '150px',
-              lineHeight: '1',
-              justifyContent: 'space-around',
-              alignItems: 'left',
-              flexDirection: 'column',
-            }}
-          >
-            <h1
-              className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
-              style={{
-                boxShadow:
-                  'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-                backgroundColor: 'rgb(255, 68, 0)',
-                color: 'white',
-                lineHeight: '1',
-                padding: '0.25em',
-              }}
-            >
-              {title}
-            </h1>
-            <h3
-              className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-              style={{
-                boxShadow:
-                  'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-                backgroundColor: 'rgb(255, 68, 0)',
-                color: 'white',
-                lineHeight: '1',
-                padding: '0.25em',
-              }}
-            >
-              {subtitle}
-            </h3>
-          </div>
-        </div>
+        <PageHeader
+          title={title}
+          titleimage={titleimage}
+          subtitle={subtitle}
+        />
         <section className="section section--gradient">
           <div className="container">
             <div className="section">
@@ -73,27 +33,10 @@ export class IndexPageTemplate extends React.Component {
                     <EmailForm form={form} />
                     <div className="content">
                       <div className="tile">
-                        <h1 className="title">{mainpitch.title}</h1>
+                        <h1 className="title">{ceremony.title}</h1>
                       </div>
                       <div className="tile">
-                        <h3 className="subtitle">{mainpitch.description}</h3>
-                      </div>
-                    </div>
-                    <div className="columns">
-                      <div className="column is-12 has-text-centered">
-                        <Link className="btn" to="/products">
-                          See all products
-                    </Link>
-                      </div>
-                    </div>
-                    <div className="column is-12">
-                      <h3 className="has-text-weight-semibold is-size-2">
-                        Latest stories
-                  </h3>
-                      <div className="column is-12 has-text-centered">
-                        <Link className="btn" to="/blog">
-                          Read more
-                    </Link>
+                        {ceremony.content}
                       </div>
                     </div>
                   </div>

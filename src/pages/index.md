@@ -33,10 +33,42 @@ ceremony:
     #ESbröllop
   title: Vigsel och middag
 location:
-  content: Text
+  content: >-
+    Den närmaste tågstationen är Köping. Från centrala Köping kan man ta sig
+    resten av vägen med bil eller taxi. Det tar ca 15 min med bil från stationen
+    till gården.
+
+
+    Lokala taxibolaget är[ Västerås taxi](https://taxivasteras.se/) och
+    [Sverigetaxi Västerås](http://www.sverigetaxivasteras.se/)
+
+
+    För er som kommer med egen bil finns det gott om avgiftsfria
+    parkeringsplatser på Tängsta gård.
   title: Hitta till Tängsta Gård
 stay:
-  content: Text
+  content: >-
+    För de som inte tänkt ta sig hela vägen hem igen efter bröllopsfirandet
+    finns det möjlighet att bo kvar på Tängsta Gård. Mer information om detta
+    och bokning finns på[ Tängsta gårds
+    webbsida](http://www.xn--tngstagrd-v2ar.se/boende-25200556)
+
+
+    Det finns även flera hotell i Köping att välja mellan, t.ex:
+
+
+    [Elite Hotel Bishops
+    arms](https://www.elite.se/sv/hotell/koping/hotel-bishops-arms/?utm_source=google&utm_medium=organic&utm_campaign=google-local&utm_content=koping)
+
+
+    [Best Western hotel
+    Scheele](https://www.bestwestern.se/booking-path/hotel-details/best-western-hotel-scheele-koping-88142?sob=A1458&gclid=CjwKCAiAjMHwBRAVEiwAzdLWGLim1XqrarKW0v3brXX2pkecJnz9GTtHH9ARsJ8mPKW4cEnkwqGB8RoCkUIQAvD_BwE&gclsrc=aw.ds)
+
+
+    [Hotell Gillet](http://www.gilletkoping.se/hotell)
+
+
+    [Hotell Lilla station](https://www.lillastation.se/en)
   title: Boende
 ---
 

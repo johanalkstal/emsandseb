@@ -33,7 +33,18 @@ ceremony:
     #ESbröllop
   title: Vigsel och middag
 location:
-  content: Text
+  content: >-
+    Den närmaste tågstationen är Köping. Från centrala Köping kan man ta sig
+    resten av vägen med bil eller taxi. Det tar ca 15 min med bil från stationen
+    till gården.
+
+
+    Lokala taxibolaget är[ Västerås taxi](https://taxivasteras.se/) och
+    [Sverigetaxi Västerås](http://www.sverigetaxivasteras.se/)
+
+
+    För er som kommer med egen bil finns det gott om avgiftsfria
+    parkeringsplatser på Tängsta gård.
   title: Hitta till Tängsta Gård
 stay:
   content: Text

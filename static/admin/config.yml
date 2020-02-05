@@ -2,11 +2,15 @@ backend:
   name: git-gateway
   branch: master
   commit_messages:
-    create: 'Create {{collection}} “{{slug}}”'
-    update: 'Update {{collection}} “{{slug}}”'
-    delete: 'Delete {{collection}} “{{slug}}”'
-    uploadMedia: '[skip ci] Upload “{{path}}”'
-    deleteMedia: '[skip ci] Delete “{{path}}”'
+    create: "Create {{collection}} “{{slug}}”"
+    update: "Update {{collection}} “{{slug}}”"
+    delete: "Delete {{collection}} “{{slug}}”"
+    uploadMedia: "[skip ci] Upload “{{path}}”"
+    deleteMedia: "[skip ci] Delete “{{path}}”"
+# backend:
+#   name: proxy
+#   branch: master
+#   proxy_url: http://localhost:8082/api/v1
 
 site_url: https://emelieochsebastian.se
 
@@ -22,11 +26,58 @@ collections:
         label: "Landing Page"
         name: "index"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
-          - {label: Title, name: title, widget: string}
-          - {label: Subtitle, name: subtitle, widget: string}
-          - {label: TitleImage, name: titleimage, widget: image}
-          - {label: Form, name: form, widget: object, fields: [{label: Title, name: title, widget: string}]}
-          - {label: Ceremony, name: ceremony, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Content, name: content, widget: markdown}]}
-          - {label: Location, name: location, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Content, name: content, widget: markdown}]}
-          - {label: Stay, name: stay, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Content, name: content, widget: markdown}]}
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "index-page",
+            }
+          - { label: Title, name: title, widget: string }
+          - { label: Subtitle, name: subtitle, widget: string }
+          - { label: TitleImage, name: titleimage, widget: image }
+          - {
+              label: Intro,
+              name: intro,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Content, name: content, widget: markdown },
+                ],
+            }
+          - {
+              label: Form,
+              name: form,
+              widget: object,
+              fields: [{ label: Title, name: title, widget: string }],
+            }
+          - {
+              label: Ceremony,
+              name: ceremony,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Content, name: content, widget: markdown },
+                ],
+            }
+          - {
+              label: Location,
+              name: location,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Content, name: content, widget: markdown },
+                ],
+            }
+          - {
+              label: Stay,
+              name: stay,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Content, name: content, widget: markdown },
+                ],
+            }

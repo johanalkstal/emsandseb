@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import showdown from "showdown";
@@ -22,32 +22,36 @@ export class IndexPageTemplate extends React.Component {
     } = this.props;
 
     return (
-      <div>
+      <Fragment>
         <PageHeader title={title} titleimage={titleimage} subtitle={subtitle} />
-        <h2>{intro.title}</h2>
-        <div
-          dangerouslySetInnerHTML={{
-            __html: converter.makeHtml(intro.content)
-          }}
-        ></div>
-        <EmailForm form={form} />
-        <h2>{ceremony.title}</h2>
-        <div
-          dangerouslySetInnerHTML={{
-            __html: converter.makeHtml(ceremony.content)
-          }}
-        ></div>
-        <h2>{location.title}</h2>
-        <div
-          dangerouslySetInnerHTML={{
-            __html: converter.makeHtml(location.content)
-          }}
-        ></div>
-        <h2>{stay.title}</h2>
-        <div
-          dangerouslySetInnerHTML={{ __html: converter.makeHtml(stay.content) }}
-        ></div>
-      </div>
+        <main>
+          <h2>{intro.title}</h2>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: converter.makeHtml(intro.content)
+            }}
+          ></div>
+          <EmailForm form={form} />
+          <h2>{ceremony.title}</h2>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: converter.makeHtml(ceremony.content)
+            }}
+          ></div>
+          <h2>{location.title}</h2>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: converter.makeHtml(location.content)
+            }}
+          ></div>
+          <h2>{stay.title}</h2>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: converter.makeHtml(stay.content)
+            }}
+          ></div>
+        </main>
+      </Fragment>
     );
   }
 }

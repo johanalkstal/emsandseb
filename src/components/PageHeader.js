@@ -12,8 +12,16 @@ export default function PageHeader({ title, titleimage, subtitle }) {
 
   return (
     <header className={styles.header} style={headerStyle}>
-      <h1 className={styles.title}>{title}</h1>
-      <h2>{subtitle}</h2>
+      <nav className={styles.nav}>
+        <a className={styles.home} href="/">
+          Emelie & Sebastian
+        </a>
+        <a href="/#rsvp">RSVP</a>
+      </nav>
+      <div className={styles.titles}>
+        <h1 className={styles.title}>{title}</h1>
+        <h2 className={styles.subTitle}>{subtitle}</h2>
+      </div>
     </header>
   );
 }

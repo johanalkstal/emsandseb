@@ -52,6 +52,18 @@ collections:
               fields: [{ label: Title, name: title, widget: string }],
             }
           - {
+              label: Couple,
+              name: couple,
+              widget: object,
+              fields:
+                [
+                  { label: Image1, name: image1, widget: image },
+                  { label: Image2, name: image2, widget: image },
+                  { label: Image3, name: image3, widget: image },
+                  { label: Content, name: content, widget: markdown },
+                ],
+            }
+          - {
               label: Ceremony,
               name: ceremony,
               widget: object,

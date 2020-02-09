@@ -1,8 +1,7 @@
 ---
 templateKey: index-page
 title: Vi ska gifta oss!
-subtitle: 5 September 2020
-titleimage: /img/topp-bild-till-hemsida.jpg
+titleimage: /img/Bild Florens EochS.jpg
 intro:
   content: >-
     Ni är hjärtlig inbjudna till vår vigsel på Tängsta gård lördagen den 5:e
@@ -13,9 +12,9 @@ form:
 couple:
   title: Brudparet
   content: Vi ar bast
-  image1: /img/topp-bild-till-hemsida.jpg
-  image2: /img/topp-bild-till-hemsida.jpg
-  image3: /img/topp-bild-till-hemsida.jpg
+  image1: /img/Bild Rom.jpg
+  image2: /img/Bild 2 - Redigerad.jpg
+  image3: /img/Bild Chianti2.jpg
 ceremony:
   content: >-
     Både vigsel och middag kommer äga rum på Tängsta Gård i Köping.  

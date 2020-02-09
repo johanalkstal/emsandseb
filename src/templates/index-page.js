@@ -15,7 +15,6 @@ export class IndexPageTemplate extends React.Component {
 
     return (
       <main className={styles.main}>
-        <h3>{intro.title}</h3>
         <div
           dangerouslySetInnerHTML={{
             __html: converter.makeHtml(intro.content)
@@ -83,7 +82,6 @@ IndexPageTemplate.propTypes = {
   couple: PropTypes.object,
   titleimage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
-  subtitle: PropTypes.string,
   ceremony: PropTypes.object,
   location: PropTypes.object,
   stay: PropTypes.object
@@ -97,7 +95,6 @@ const IndexPage = ({ data }) => {
       <PageHeader
         title={frontmatter.title}
         titleimage={frontmatter.titleimage}
-        subtitle={frontmatter.subtitle}
       />
       <IndexPageTemplate
         couple={frontmatter.couple}
@@ -161,7 +158,6 @@ export const pageQuery = graphql`
             }
           }
         }
-        subtitle
         intro {
           title
           content

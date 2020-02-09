@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import styles from "./PageHeader.module.sass";
 
 export default function PageHeader({ title, titleimage, subtitle }) {
@@ -11,16 +11,25 @@ export default function PageHeader({ title, titleimage, subtitle }) {
   };
 
   return (
-    <header className={styles.header} style={headerStyle}>
+    <Fragment>
       <nav className={styles.nav}>
         <a className={styles.home} href="/">
           Emelie & Sebastian
         </a>
       </nav>
-      <div className={styles.titles}>
-        <h1 className={styles.title}>{title}</h1>
-        <h2 className={styles.subTitle}>{subtitle}</h2>
-      </div>
-    </header>
+      <header className={styles.header}>
+        <div className={styles.banner}>
+          <h1 className={styles.title}>{title}</h1>
+          <img
+            className={styles.image}
+            src={
+              !!titleimage.childImageSharp
+                ? titleimage.childImageSharp.fluid.src
+                : titleimage
+            }
+          />
+        </div>
+      </header>
+    </Fragment>
   );
 }

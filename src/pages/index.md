@@ -11,7 +11,39 @@ intro:
 form:
   title: Meddela oss om du kan närvara eller inte genom att fyll i ditt namn nedan
 couple:
-  content: Vi ar bast
+  content: >-
+    Vår resa började när vi träffades på våra vänners Åsa och Uffes bröllop i
+    juni 2014. Sebastian var toastmaster och Emelie höll tal för sin vän. Efter
+    middagen pratade vi om TV-serien Doctor Who och insåg att vi hade samma
+    favorit doktor (tionde doktorn). Första kyssen kom spontant senare samma dag
+    i väntan på tunnelbanan i Liljeholmen.
+
+
+
+
+    Vår första dejt blev av några dagar senare. Vi gick på bio, träffades efter
+    jobbet torsdagen före midsommarafton vid Hötorget och såg “The fault in our
+    stars”. Efter denna dejt hänger vi ihop och i maj 2015 flyttade vi ihop.
+
+
+
+
+    Första resan tillsammans bar till Rom där vi båda förälskade oss i Italien.
+    Sedan dess delar vi en passion till Italiensk mat, vin och de enormt fina
+    Toscanska landskapen. En resa om året till Italien är sedan dess en
+    tradition för oss.
+
+
+
+
+    Florens 2018 skulle bli en väldigt speciell semesterresa. Efter en lång varm
+    dag av bestigande av kullar och utforskande, på väg för att hitta en
+    restaurang för lite middag gick han ner på knä intill floden Arno. Hon sa ja
+    på en gång. De kysstes och förbipasserande ropade “Aguri”, italienska ordet
+    för grattis. I Florens köpte vi våra förlovningsringar och graverade dem med
+    Amore eterno (evig kärlek). Vi reste tillbaka till Florens under vintern
+    2019 för att köpa vigselringarna från samma guldsmed som gjort våra
+    förlovningsringar.
   image1: /img/Bild Rom.jpg
   image2: /img/Bild 2 - Redigerad.jpg
   image3: /img/Bild Chianti2.jpg

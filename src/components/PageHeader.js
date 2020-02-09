@@ -16,7 +16,6 @@ export default function PageHeader({ title, titleimage, subtitle }) {
         <a className={styles.home} href="/">
           Emelie & Sebastian
         </a>
-        <a href="/#rsvp">RSVP</a>
       </nav>
       <div className={styles.titles}>
         <h1 className={styles.title}>{title}</h1>

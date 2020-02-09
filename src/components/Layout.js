@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { Helmet } from "react-helmet";
 import "./all.sass";
 import useSiteMetadata from "./SiteMetadata";
@@ -7,7 +7,7 @@ import { withPrefix } from "gatsby";
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
   return (
-    <div>
+    <Fragment>
       <Helmet>
         <html lang="sv" />
         <title>{title}</title>
@@ -25,7 +25,7 @@ const TemplateWrapper = ({ children }) => {
         /> */}
       </Helmet>
       {children}
-    </div>
+    </Fragment>
   );
 };
 

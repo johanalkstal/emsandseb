@@ -1,57 +1,46 @@
-import React, { Fragment } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import showdown from "showdown";
 import EmailForm from "../components/EmailForm";
 import Layout from "../components/Layout";
 import PageHeader from "../components/PageHeader";
+import styles from "./indexPage.module.sass";
 
 const converter = new showdown.Converter();
 
 export class IndexPageTemplate extends React.Component {
   render() {
-    const {
-      titleimage,
-      title,
-      subtitle,
-      intro,
-      form,
-      ceremony,
-      location,
-      stay
-    } = this.props;
+    const { intro, form, ceremony, location, stay } = this.props;
 
     return (
-      <Fragment>
-        <PageHeader title={title} titleimage={titleimage} subtitle={subtitle} />
-        <main>
-          <h2>{intro.title}</h2>
-          <div
-            dangerouslySetInnerHTML={{
-              __html: converter.makeHtml(intro.content)
-            }}
-          ></div>
-          <EmailForm form={form} />
-          <h2>{ceremony.title}</h2>
-          <div
-            dangerouslySetInnerHTML={{
-              __html: converter.makeHtml(ceremony.content)
-            }}
-          ></div>
-          <h2>{location.title}</h2>
-          <div
-            dangerouslySetInnerHTML={{
-              __html: converter.makeHtml(location.content)
-            }}
-          ></div>
-          <h2>{stay.title}</h2>
-          <div
-            dangerouslySetInnerHTML={{
-              __html: converter.makeHtml(stay.content)
-            }}
-          ></div>
-        </main>
-      </Fragment>
+      <main className={styles.main}>
+        <h3>{intro.title}</h3>
+        <div
+          dangerouslySetInnerHTML={{
+            __html: converter.makeHtml(intro.content)
+          }}
+        ></div>
+        <EmailForm form={form} />
+        <h3>{ceremony.title}</h3>
+        <div
+          dangerouslySetInnerHTML={{
+            __html: converter.makeHtml(ceremony.content)
+          }}
+        ></div>
+        <h3>{location.title}</h3>
+        <div
+          dangerouslySetInnerHTML={{
+            __html: converter.makeHtml(location.content)
+          }}
+        ></div>
+        <h3>{stay.title}</h3>
+        <div
+          dangerouslySetInnerHTML={{
+            __html: converter.makeHtml(stay.content)
+          }}
+        ></div>
+      </main>
     );
   }
 }
@@ -70,11 +59,13 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
+      <PageHeader
+        title={frontmatter.title}
+        titleimage={frontmatter.titleimage}
+        subtitle={frontmatter.subtitle}
+      />
       <IndexPageTemplate
         form={frontmatter.form}
-        titleimage={frontmatter.titleimage}
-        title={frontmatter.title}
-        subtitle={frontmatter.subtitle}
         intro={frontmatter.intro}
         ceremony={frontmatter.ceremony}
         location={frontmatter.location}

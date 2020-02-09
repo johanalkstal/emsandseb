@@ -1,13 +1,13 @@
 ---
 templateKey: index-page
-title: Emelie & Sebastian
-subtitle: >-
-  5 September 2020
+title: Vi ska gifta oss!
+subtitle: 5 September 2020
 titleimage: /img/topp-bild-till-hemsida.jpg
 intro:
-  title: Vi ska gifta oss!
   content: >-
-    Ni är hjärtlig inbjudna till vår vigsel på Tängsta gård lördagen den 5:e september 2020
+    Ni är hjärtlig inbjudna till vår vigsel på Tängsta gård lördagen den 5:e
+    september 2020
+  title: Vi ska gifta oss!
 form:
   title: Meddela oss om du kan närvara eller inte genom att fyll i ditt namn nedan
 ceremony:
@@ -74,3 +74,4 @@ stay:
     [Hotell Lilla station](https://www.lillastation.se/en)
   title: Boende
 ---
+

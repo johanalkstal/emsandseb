@@ -7,7 +7,7 @@ intro:
   content: >-
     Ni är hjärtlig inbjudna till vår vigsel på Tängsta gård lördagen den 5:e
     september 2020.
-  title: ' '
+  title: " "
 form:
   title: Meddela oss om du kan närvara eller inte genom att fyll i ditt namn nedan
 couple:
@@ -44,6 +44,7 @@ couple:
     Amore eterno (evig kärlek). Vi reste tillbaka till Florens under vintern
     2019 för att köpa vigselringarna från samma guldsmed som gjort våra
     förlovningsringar.
+  title: Brudparet
   image1: /img/Bild Rom.jpg
   image2: /img/Bild 2 - Redigerad.jpg
   image3: /img/Bild Chianti2.jpg
@@ -111,4 +112,3 @@ stay:
     [Hotell Lilla station](https://www.lillastation.se/en)
   title: Boende
 ---
-

@@ -2,28 +2,73 @@ import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import showdown from "showdown";
+import mapboxgl from "mapbox-gl";
+import MapboxDirections from "@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions";
 import EmailForm from "../components/EmailForm";
 import Layout from "../components/Layout";
 import PageHeader from "../components/PageHeader";
 import styles from "./indexPage.module.sass";
+import "@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions.css";
 
 const converter = new showdown.Converter();
+const ceremonyLocation = [16.0009, 59.5961];
+const mapboxToken =
+  "pk.eyJ1IjoiYWxrc3RhbCIsImEiOiJjazZxN2ZpZXExam4yM2Zxc3J6eXZ4MTN3In0.B1FWxth0k2P8Dj0gBVVysw";
 
 export class IndexPageTemplate extends React.Component {
+  mapRef = React.createRef();
+
+  componentDidMount() {
+    mapboxgl.accessToken = mapboxToken;
+
+    this.map = new mapboxgl.Map({
+      center: ceremonyLocation,
+      container: this.mapRef.current,
+      style: "mapbox://styles/mapbox/streets-v11",
+      zoom: 13
+    });
+
+    const directions = new MapboxDirections({
+      accessToken: mapboxToken,
+      unit: "metric"
+    });
+
+    this.map.addControl(directions);
+
+    directions.setDestination("Tängsta 1, 731 93 Köping, Sweden");
+
+    new mapboxgl.Marker().setLngLat(ceremonyLocation).addTo(this.map);
+  }
+
+  componentWillUnmount() {
+    this.map.remove();
+  }
+
   render() {
-    const { couple, intro, form, ceremony, location, stay } = this.props;
+    const {
+      couple,
+      intro,
+      form,
+      ceremony,
+      location,
+      stay,
+      others
+    } = this.props;
 
     return (
-      <main className={styles.main}>
+      <main>
         <div
+          className={styles.content}
           dangerouslySetInnerHTML={{
             __html: converter.makeHtml(intro.content)
           }}
         ></div>
 
-        <EmailForm form={form} />
+        <div className={styles.content}>
+          <EmailForm form={form} />
+        </div>
 
-        <h3>{couple.title}</h3>
+        <h2>{couple.title}</h2>
         <div className={styles.images}>
           <img
             src={
@@ -48,27 +93,75 @@ export class IndexPageTemplate extends React.Component {
           />
         </div>
         <div
+          className={styles.content}
           dangerouslySetInnerHTML={{
             __html: converter.makeHtml(couple.content)
           }}
         ></div>
 
-        <h3>{ceremony.title}</h3>
+        <div className={styles.bottomImage}>
+          <img
+            src={
+              !!couple.image4.childImageSharp
+                ? couple.image4.childImageSharp.fluid.src
+                : couple.image4
+            }
+          />
+        </div>
+
+        <h2>{others.bestManTitle}</h2>
         <div
+          className={styles.content}
+          dangerouslySetInnerHTML={{
+            __html: converter.makeHtml(others.bestManContent)
+          }}
+        ></div>
+
+        <h2>{others.bridesMaidTitle}</h2>
+        <div
+          className={styles.content}
+          dangerouslySetInnerHTML={{
+            __html: converter.makeHtml(others.bridesMaidContent)
+          }}
+        ></div>
+
+        <h2>{others.toastMasterTitle}</h2>
+        <div
+          className={styles.content}
+          dangerouslySetInnerHTML={{
+            __html: converter.makeHtml(others.toastMasterContent)
+          }}
+        ></div>
+
+        <h2>{others.toastMadameTitle}</h2>
+        <div
+          className={styles.content}
+          dangerouslySetInnerHTML={{
+            __html: converter.makeHtml(others.toastMadameContent)
+          }}
+        ></div>
+
+        <h2>{ceremony.title}</h2>
+        <div
+          className={styles.content}
           dangerouslySetInnerHTML={{
             __html: converter.makeHtml(ceremony.content)
           }}
         ></div>
 
-        <h3>{location.title}</h3>
+        <h2>{location.title}</h2>
         <div
+          className={styles.content}
           dangerouslySetInnerHTML={{
             __html: converter.makeHtml(location.content)
           }}
         ></div>
 
-        <h3>{stay.title}</h3>
+        <div className={styles.map} ref={this.mapRef}></div>
+
+        <h2>{stay.title}</h2>
         <div
+          className={styles.content}
           dangerouslySetInnerHTML={{
             __html: converter.makeHtml(stay.content)
           }}
@@ -84,7 +177,8 @@ IndexPageTemplate.propTypes = {
   title: PropTypes.string,
   ceremony: PropTypes.object,
   location: PropTypes.object,
-  stay: PropTypes.object
+  stay: PropTypes.object,
+  others: PropTypes.object
 };
 
 const IndexPage = ({ data }) => {
@@ -103,6 +197,7 @@ const IndexPage = ({ data }) => {
         ceremony={frontmatter.ceremony}
         location={frontmatter.location}
         stay={frontmatter.stay}
+        others={frontmatter.others}
       />
     </Layout>
   );
@@ -146,6 +241,13 @@ export const pageQuery = graphql`
               }
             }
           }
+          image4 {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
         form {
           title
@@ -157,6 +259,16 @@ export const pageQuery = graphql`
               ...GatsbyImageSharpFluid
             }
           }
+        }
+        others {
+          bestManTitle
+          bestManContent
+          bridesMaidTitle
+          bridesMaidContent
+          toastMasterTitle
+          toastMasterContent
+          toastMadameTitle
+          toastMadameContent
         }
         intro {
           title

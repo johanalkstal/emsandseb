@@ -48,6 +48,21 @@ couple:
   image1: /img/Bild Rom.jpg
   image2: /img/Bild 2 - Redigerad.jpg
   image3: /img/Bild Chianti2.jpg
+  image4: /img/topp-bild-till-hemsida.jpg
+others:
+  bestManTitle: Min best man, Fredrik Lundquist
+  bestManContent: >-
+    Jag har hängt med Fredde sen vi var hur små som helst. Vi gick i samma klass från ettan i grundskolan, men det var nog först i fyran som vi faktiskt lärde känna varandra. Sedan dess har vi hängt tillsammans i replokaler, inspelningsstudior och på Jul!
+
+  bridesMaidTitle: Min brudtärna, Carolina Alkstål
+  bridesMaidContent: >-
+    Carro är min syster och vän. Hon var den första i familjen som fick veta att jag hade träffat Sebastian. När Carro gifte sig så fick jag äran att vara hennes brudtärna, så nu när det var min tur att välja tärna var jag säker på att hon skulle ställa upp! Carro är också geniet bakom den italiensk inspirerade bröllopstårtan.
+  toastMasterTitle: Toastmaster, Johan Carlsson
+  toastMasterContent: >-
+    Johan Carlsson är en god vän till oss båda och en äkta livsnjutare. Ett av våra starkaste minnen av Johan är när han över en middag berättar väldigt inlevelsefullt om sina gamla husdjur och hur de gick sina öden till mötes. Har ni tur kan han säkert  dela med sig av några historier.
+  toastMadameTitle: Toastmadame, Eva Florin
+  toastMadameContent: >-
+    Eva Florin är barndomsvän till Emelie. Vi har gått igenom mycket tillsammans, från att leka kull på sexårs till frustrerande tonår och vidare in i vuxenvärlden. En hel livsresa! Och jag måste säga att det är lyxigt att få ha Eva som jobbar som ”partyplanner” som vår toastmadame.
 ceremony:
   content: >-
     Både vigsel och middag kommer äga rum på Tängsta Gård i Köping.  
@@ -86,6 +101,12 @@ location:
 
     För er som kommer med egen bil finns det gott om avgiftsfria
     parkeringsplatser på Tängsta gård.
+
+
+    Koordinater: 59.5961, 16.0009 
+
+
+    [Tängsta Gård](http://www.xn--tngstagrd-v2ar.se/)
   title: Hitta till Tängsta Gård
 stay:
   content: >-

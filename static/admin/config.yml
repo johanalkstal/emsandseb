@@ -62,6 +62,51 @@ collections:
                   { label: Image1, name: image1, widget: image },
                   { label: Image2, name: image2, widget: image },
                   { label: Image3, name: image3, widget: image },
+                  { label: Image4, name: image4, widget: image },
+                ],
+            }
+          - {
+              label: Others,
+              name: others,
+              widget: object,
+              fields:
+                [
+                  { label: BestManTitle, name: bestManTitle, widget: string },
+                  {
+                    label: BestManContent,
+                    name: bestManContent,
+                    widget: markdown,
+                  },
+                  {
+                    label: BridesMaidTitle,
+                    name: bridesMaidTitle,
+                    widget: string,
+                  },
+                  {
+                    label: BridesMaidContent,
+                    name: bridesMaidContent,
+                    widget: markdown,
+                  },
+                  {
+                    label: ToastMasterTitle,
+                    name: toastMasterTitle,
+                    widget: string,
+                  },
+                  {
+                    label: ToastMasterContent,
+                    name: toastMasterContent,
+                    widget: markdown,
+                  },
+                  {
+                    label: ToastMadameTitle,
+                    name: toastMadameTitle,
+                    widget: string,
+                  },
+                  {
+                    label: ToastMadameContent,
+                    name: toastMadameContent,
+                    widget: markdown,
+                  },
                 ],
             }
           - {

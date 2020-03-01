@@ -112,7 +112,7 @@ export class IndexPageTemplate extends React.Component {
         </div>
 
         <h2>{others.bestManTitle}</h2>
-        <div className={styles.images}>
+        <div className={styles.peopleImages}>
           <img
             src={
               !!others.bestManImage.childImageSharp
@@ -129,7 +129,7 @@ export class IndexPageTemplate extends React.Component {
         ></div>
 
         <h2>{others.bridesMaidTitle}</h2>
-        <div className={styles.images}>
+        <div className={styles.peopleImages}>
           <img
             src={
               !!others.bridesMaidImage.childImageSharp
@@ -146,7 +146,7 @@ export class IndexPageTemplate extends React.Component {
         ></div>
 
         <h2>{others.toastMasterTitle}</h2>
-        <div className={styles.images}>
+        <div className={styles.peopleImages}>
           <img
             src={
               !!others.toastMasterImage.childImageSharp
@@ -163,7 +163,7 @@ export class IndexPageTemplate extends React.Component {
         ></div>
 
         <h2>{others.toastMadameTitle}</h2>
-        <div className={styles.images}>
+        <div className={styles.peopleImages}>
           <img
             src={
               !!others.toastMadameImage.childImageSharp

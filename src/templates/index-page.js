@@ -240,7 +240,7 @@ export class IndexPageTemplate extends React.Component {
         <div className={styles.countdown}>
           <h2 className={styles.countdownTitle}>{countdownTitle}</h2>
           <Countdown
-            date={new Date("September 5, 2020, 18:00")}
+            date={new Date("September 5, 2020, 14:30")}
             renderer={this.countdownRenderer}
           />
         </div>

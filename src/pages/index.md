@@ -5,7 +5,7 @@ subtitle: Min subtitel
 titleimage: /img/Bild Florens EochS.jpg
 intro:
   content: >-
-    ## Ni är hjärtlig inbjudna till vår vigsel på Tängsta gård lördagen den 5:e
+    ## Ni är hjärtligt inbjudna till vår vigsel på Tängsta gård lördagen den 5:e
     september 2020.
   title: ' '
 form:

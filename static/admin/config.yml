@@ -158,4 +158,4 @@ collections:
                   { label: Content, name: content, widget: markdown },
                 ],
             }
-            { label: CountdownTitle, name: countdownTitle, widget: string }
+          - { label: CountdownTitle, name: countdownTitle, widget: string }

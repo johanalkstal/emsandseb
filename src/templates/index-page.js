@@ -112,13 +112,15 @@ export class IndexPageTemplate extends React.Component {
         </div>
 
         <h2>{others.bestManTitle}</h2>
-        <img
-          src={
-            !!others.bestManImage.childImageSharp
-              ? others.bestManImage.childImageSharp.fluid.src
-              : others.bestManImage
-          }
-        />
+        <div className={styles.images}>
+          <img
+            src={
+              !!others.bestManImage.childImageSharp
+                ? others.bestManImage.childImageSharp.fluid.src
+                : others.bestManImage
+            }
+          />
+        </div>
         <div
           className={styles.content}
           dangerouslySetInnerHTML={{
@@ -135,6 +137,15 @@ export class IndexPageTemplate extends React.Component {
         ></div>
 
         <h2>{others.toastMasterTitle}</h2>
+        <div className={styles.images}>
+          <img
+            src={
+              !!others.toastMasterImage.childImageSharp
+                ? others.toastMasterImage.childImageSharp.fluid.src
+                : others.toastMasterImage
+            }
+          />
+        </div>
         <div
           className={styles.content}
           dangerouslySetInnerHTML={{
@@ -271,6 +282,7 @@ export const pageQuery = graphql`
         }
         others {
           bestManTitle
+          bestManContent
           bestManImage {
             childImageSharp {
               fluid(maxWidth: 2048, quality: 100) {
@@ -278,11 +290,17 @@ export const pageQuery = graphql`
               }
             }
           }
-          bestManContent
           bridesMaidTitle
           bridesMaidContent
           toastMasterTitle
           toastMasterContent
+          toastMasterImage {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
           toastMadameTitle
           toastMadameContent
         }

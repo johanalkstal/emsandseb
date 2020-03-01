@@ -1,7 +1,6 @@
 ---
 templateKey: index-page
 title: Vi ska gifta oss!
-subtitle: Min subtitel
 titleimage: /img/Bild Florens EochS.jpg
 intro:
   content: >-
@@ -55,7 +54,7 @@ others:
     lärde känna varandra. Sedan dess har vi hängt tillsammans i replokaler,
     inspelningsstudior och på Jul!
   bestManTitle: "Min best man, Fredrik Lundquist"
-  bestManImage: /img/fredrik.jpg
+  bestManImage: /img/fredrik.jpeg
   bridesMaidContent: >-
     Carro är min syster och vän. Hon var den första i familjen som fick veta att
     jag hade träffat Sebastian. När Carro gifte sig så fick jag äran att vara
@@ -75,6 +74,7 @@ others:
     inlevelsefullt om sina gamla husdjur och hur de gick sina öden till mötes.
     Har ni tur kan han säkert  dela med sig av några historier.
   toastMasterTitle: "Toastmaster, Johan Carlsson"
+  toastMasterImage: /img/johan.jpeg
 ceremony:
   content: >-
     Både vigsel och middag kommer äga rum på Tängsta Gård i Köping.  

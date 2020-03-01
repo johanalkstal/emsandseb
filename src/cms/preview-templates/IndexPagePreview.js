@@ -13,7 +13,6 @@ const IndexPagePreview = ({ entry, getAsset }) => {
         form={data.form}
         title={data.title}
         titleimage={data.titleimage}
-        subtitle={data.subtitle}
         intro={data.intro}
         form={data.form}
         ceremony={data.ceremony}

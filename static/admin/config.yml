@@ -90,6 +90,11 @@ collections:
                     widget: string,
                   },
                   {
+                    label: ToastMasterImage,
+                    name: toastMasterImage,
+                    widget: image,
+                  },
+                  {
                     label: ToastMasterContent,
                     name: toastMasterContent,
                     widget: markdown,

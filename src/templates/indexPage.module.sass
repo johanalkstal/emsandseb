@@ -6,13 +6,25 @@
     border: 1px solid #cccccc
     border-radius: 8px
   
-.content
+.content,
+.countdown
   margin-bottom: 4rem
   padding: 0 1.5rem
 
   @media (min-width: 800px)
     margin: 0 auto 4rem
     max-width: 50rem
+
+.countdown
+  background: #f6f6f6
+  border: 1px solid #cccccc
+  border-radius: 4px
+  font-size: 1.5rem
+  padding: 2rem
+  text-align: center
+
+.countdownTitle
+  margin-bottom: 2rem
 
 .images,
 .peopleImages
@@ -41,3 +53,12 @@
   @media (min-width: 800px)
     margin: 0 auto 4rem
     width: 50rem
+
+.time
+  display: flex
+  justify-content: space-evenly
+
+.timeUnit
+  display: flex
+  flex-direction: column
+  align-items: center

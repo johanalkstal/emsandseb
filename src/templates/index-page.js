@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
+import Countdown from "react-countdown";
 import showdown from "showdown";
 import mapboxgl from "mapbox-gl";
 import MapboxDirections from "@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions";
@@ -46,6 +47,36 @@ export class IndexPageTemplate extends React.Component {
     }
   }
 
+  countdownRenderer({ days, hours, minutes, seconds, completed }) {
+    if (completed) {
+      return <h2>Grattis Emelie och Sebastian!</h2>;
+    } else {
+      return (
+        <div className={styles.time}>
+          <div className={styles.timeUnit}>
+            <span>{days}</span>
+            <span>dagar</span>
+          </div>
+
+          <div className={styles.timeUnit}>
+            <span>{hours}</span>
+            <span>timmar</span>
+          </div>
+
+          <div className={styles.timeUnit}>
+            <span>{minutes}</span>
+            <span>minuter</span>
+          </div>
+
+          <div className={styles.timeUnit}>
+            <span>{seconds}</span>
+            <span>sekunder</span>
+          </div>
+        </div>
+      );
+    }
+  }
+
   render() {
     const {
       couple,
@@ -54,7 +85,8 @@ export class IndexPageTemplate extends React.Component {
       ceremony,
       location,
       stay,
-      others
+      others,
+      countdownTitle
     } = this.props;
 
     return (
@@ -204,6 +236,14 @@ export class IndexPageTemplate extends React.Component {
             __html: converter.makeHtml(stay.content)
           }}
         ></div>
+
+        <div className={styles.countdown}>
+          <h2 className={styles.countdownTitle}>{countdownTitle}</h2>
+          <Countdown
+            date={new Date("September 5, 2020, 18:00")}
+            renderer={this.countdownRenderer}
+          />
+        </div>
       </main>
     );
   }
@@ -216,7 +256,8 @@ IndexPageTemplate.propTypes = {
   ceremony: PropTypes.object,
   location: PropTypes.object,
   stay: PropTypes.object,
-  others: PropTypes.object
+  others: PropTypes.object,
+  countdownTitle: PropTypes.string
 };
 
 const IndexPage = ({ data }) => {
@@ -236,6 +277,7 @@ const IndexPage = ({ data }) => {
         location={frontmatter.location}
         stay={frontmatter.stay}
         others={frontmatter.others}
+        countdownTitle={frontmatter.countdownTitle}
       />
     </Layout>
   );
@@ -351,6 +393,7 @@ export const pageQuery = graphql`
           title
           content
         }
+        countdownTitle
       }
     }
   }

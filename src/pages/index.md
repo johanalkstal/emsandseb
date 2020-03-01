@@ -146,4 +146,5 @@ stay:
 
     [Hotell Lilla station](https://www.lillastation.se/en)
   title: Boende
+countdownTitle: Tid kvar till bröllopet
 ---

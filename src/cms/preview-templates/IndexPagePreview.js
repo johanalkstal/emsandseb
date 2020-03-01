@@ -18,6 +18,7 @@ const IndexPagePreview = ({ entry, getAsset }) => {
           location={data.location}
           stay={data.stay}
           others={data.others}
+          countdownTitle={data.countdownTitle}
         />
       </Fragment>
     );

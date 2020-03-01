@@ -68,6 +68,7 @@ collections:
               fields:
                 [
                   { label: BestManTitle, name: bestManTitle, widget: string },
+                  { label: BestManImage, name: bestManImage, widget: image },
                   {
                     label: BestManContent,
                     name: bestManContent,

@@ -112,6 +112,13 @@ export class IndexPageTemplate extends React.Component {
         </div>
 
         <h2>{others.bestManTitle}</h2>
+        <img
+          src={
+            !!others.bestManImage.childImageSharp
+              ? others.bestManImage.childImageSharp.fluid.src
+              : others.bestManImage
+          }
+        />
         <div
           className={styles.content}
           dangerouslySetInnerHTML={{
@@ -264,6 +271,13 @@ export const pageQuery = graphql`
         }
         others {
           bestManTitle
+          bestManImage {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
           bestManContent
           bridesMaidTitle
           bridesMaidContent

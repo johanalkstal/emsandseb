@@ -55,6 +55,7 @@ others:
     lärde känna varandra. Sedan dess har vi hängt tillsammans i replokaler,
     inspelningsstudior och på Jul!
   bestManTitle: "Min best man, Fredrik Lundquist"
+  bestManImage: /img/fredrik.jpg
   bridesMaidContent: >-
     Carro är min syster och vän. Hon var den första i familjen som fick veta att
     jag hade träffat Sebastian. När Carro gifte sig så fick jag äran att vara

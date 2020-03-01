@@ -41,7 +41,9 @@ export class IndexPageTemplate extends React.Component {
   }
 
   componentWillUnmount() {
-    this.map.remove();
+    if (this.map) {
+      this.map.remove();
+    }
   }
 
   render() {

@@ -1,5 +1,6 @@
-import React from "react";
+import React, { Fragment } from "react";
 import PropTypes from "prop-types";
+import PageHeader from "../../components/PageHeader";
 import { IndexPageTemplate } from "../../templates/index-page";
 
 const IndexPagePreview = ({ entry, getAsset }) => {
@@ -7,18 +8,18 @@ const IndexPagePreview = ({ entry, getAsset }) => {
 
   if (data) {
     return (
-      <IndexPageTemplate
-        couple={data.couple}
-        others={data.others}
-        form={data.form}
-        title={data.title}
-        titleimage={data.titleimage}
-        intro={data.intro}
-        form={data.form}
-        ceremony={data.ceremony}
-        location={data.location}
-        stay={data.stay}
-      />
+      <Fragment>
+        <PageHeader title={data.title} titleimage={data.titleimage} />
+        <IndexPageTemplate
+          couple={data.couple}
+          form={data.form}
+          intro={data.intro}
+          ceremony={data.ceremony}
+          location={data.location}
+          stay={data.stay}
+          others={data.others}
+        />
+      </Fragment>
     );
   } else {
     return <div>Loading...</div>;

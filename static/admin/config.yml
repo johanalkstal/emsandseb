@@ -33,7 +33,6 @@ collections:
               default: "index-page",
             }
           - { label: Title, name: title, widget: string }
-          - { label: Subtitle, name: subtitle, widget: string }
           - { label: TitleImage, name: titleimage, widget: image }
           - {
               label: Intro,
@@ -99,12 +98,6 @@ collections:
                     label: ToastMasterTitle,
                     name: toastMasterTitle,
                     widget: string,
-                  },
-                  {
-                    label: ToastMasterImage,
-                    name: toastMasterImage,
-                    widget: image,
-                    required: false,
                   },
                   {
                     label: ToastMasterImage,

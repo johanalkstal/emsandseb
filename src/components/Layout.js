@@ -20,13 +20,10 @@ const TemplateWrapper = ({ children }) => {
           href="https://api.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.css"
           rel="stylesheet"
         />
-        {/* <meta property="og:type" content="business.business" />
+        <meta property="og:type" content="website" />
         <meta property="og:title" content={title} />
         <meta property="og:url" content="/" />
-        <meta
-          property="og:image"
-          content={`${withPrefix('/')}img/og-image.jpg`}
-        /> */}
+        <meta property="og:image" content={`${withPrefix("/")}img/ogimg.jpg`} />
       </Helmet>
       {children}
     </Fragment>

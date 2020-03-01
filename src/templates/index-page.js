@@ -129,6 +129,15 @@ export class IndexPageTemplate extends React.Component {
         ></div>
 
         <h2>{others.bridesMaidTitle}</h2>
+        <div className={styles.images}>
+          <img
+            src={
+              !!others.bridesMaidImage.childImageSharp
+                ? others.bridesMaidImage.childImageSharp.fluid.src
+                : others.bridesMaidImage
+            }
+          />
+        </div>
         <div
           className={styles.content}
           dangerouslySetInnerHTML={{
@@ -154,6 +163,15 @@ export class IndexPageTemplate extends React.Component {
         ></div>
 
         <h2>{others.toastMadameTitle}</h2>
+        <div className={styles.images}>
+          <img
+            src={
+              !!others.toastMadameImage.childImageSharp
+                ? others.toastMadameImage.childImageSharp.fluid.src
+                : others.toastMadameImage
+            }
+          />
+        </div>
         <div
           className={styles.content}
           dangerouslySetInnerHTML={{
@@ -292,6 +310,13 @@ export const pageQuery = graphql`
           }
           bridesMaidTitle
           bridesMaidContent
+          bridesMaidImage {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
           toastMasterTitle
           toastMasterContent
           toastMasterImage {
@@ -303,6 +328,13 @@ export const pageQuery = graphql`
           }
           toastMadameTitle
           toastMadameContent
+          toastMadameImage {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
         intro {
           content

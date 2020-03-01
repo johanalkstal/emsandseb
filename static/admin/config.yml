@@ -68,7 +68,12 @@ collections:
               fields:
                 [
                   { label: BestManTitle, name: bestManTitle, widget: string },
-                  { label: BestManImage, name: bestManImage, widget: image },
+                  {
+                    label: BestManImage,
+                    name: bestManImage,
+                    widget: image,
+                    required: false,
+                  },
                   {
                     label: BestManContent,
                     name: bestManContent,
@@ -78,6 +83,12 @@ collections:
                     label: BridesMaidTitle,
                     name: bridesMaidTitle,
                     widget: string,
+                  },
+                  {
+                    label: BridesMaidImage,
+                    name: bridesMaidImage,
+                    widget: image,
+                    required: false,
                   },
                   {
                     label: BridesMaidContent,
@@ -93,6 +104,13 @@ collections:
                     label: ToastMasterImage,
                     name: toastMasterImage,
                     widget: image,
+                    required: false,
+                  },
+                  {
+                    label: ToastMasterImage,
+                    name: toastMasterImage,
+                    widget: image,
+                    required: false,
                   },
                   {
                     label: ToastMasterContent,
@@ -103,6 +121,12 @@ collections:
                     label: ToastMadameTitle,
                     name: toastMadameTitle,
                     widget: string,
+                  },
+                  {
+                    label: ToastMadameImage,
+                    name: toastMadameImage,
+                    widget: image,
+                    required: false,
                   },
                   {
                     label: ToastMadameContent,

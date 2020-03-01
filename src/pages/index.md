@@ -62,12 +62,14 @@ others:
     att hon skulle ställa upp! Carro är också geniet bakom den italiensk
     inspirerade bröllopstårtan.
   bridesMaidTitle: "Min brudtärna, Carolina Alkstål"
+  bridesMaidImage: /img/fredrik.jpeg
   toastMadameContent: >-
     Eva Florin är barndomsvän till Emelie. Vi har gått igenom mycket
     tillsammans, från att leka kull på sexårs till frustrerande tonår och vidare
     in i vuxenvärlden. En hel livsresa! Och jag måste säga att det är lyxigt att
     få ha Eva som jobbar som ”partyplanner” som vår toastmadame.
   toastMadameTitle: "Toastmadame, Eva Florin"
+  toastMadameImage: /img/fredrik.jpeg
   toastMasterContent: >-
     Johan Carlsson är en god vän till oss båda och en äkta livsnjutare. Ett av
     våra starkaste minnen av Johan är när han över en middag berättar väldigt

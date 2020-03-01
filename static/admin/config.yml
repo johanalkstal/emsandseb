@@ -39,11 +39,7 @@ collections:
               label: Intro,
               name: intro,
               widget: object,
-              fields:
-                [
-                  { label: Title, name: title, widget: string },
-                  { label: Content, name: content, widget: markdown },
-                ],
+              fields: [{ label: Content, name: content, widget: markdown }],
             }
           - {
               label: Form,

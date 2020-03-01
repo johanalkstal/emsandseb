@@ -273,7 +273,6 @@ export const pageQuery = graphql`
           toastMadameContent
         }
         intro {
-          title
           content
         }
         ceremony {

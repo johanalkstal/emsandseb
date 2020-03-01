@@ -5,7 +5,7 @@ import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
 
 const TemplateWrapper = ({ children }) => {
-  const { title, description } = useSiteMetadata();
+  const { title, description, url } = useSiteMetadata();
   return (
     <Fragment>
       <Helmet>
@@ -22,7 +22,8 @@ const TemplateWrapper = ({ children }) => {
         />
         <meta property="og:type" content="website" />
         <meta property="og:title" content={title} />
-        <meta property="og:url" content="/" />
+        <meta property="og:description" content={description} />
+        <meta property="og:url" content={url} />
         <meta property="og:image" content={`${withPrefix("/")}img/ogimg.jpg`} />
       </Helmet>
       {children}

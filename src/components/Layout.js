@@ -24,7 +24,7 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:url" content={url} />
-        <meta property="og:image" content={`${withPrefix("/")}img/ogimg.jpg`} />
+        <meta property="og:image" content={`${url}img/ogimg.jpg`} />
       </Helmet>
       {children}
     </Fragment>

@@ -54,29 +54,29 @@ others:
     lärde känna varandra. Sedan dess har vi hängt tillsammans i replokaler,
     inspelningsstudior och på Jul!
   bestManImage: /img/fredrik.jpeg
-  bestManTitle: "Min best man, Fredrik Lundquist"
+  bestManTitle: 'Min best man, Fredrik Lundquist'
   bridesMaidContent: >-
     Carro är min syster och vän. Hon var den första i familjen som fick veta att
     jag hade träffat Sebastian. När Carro gifte sig så fick jag äran att vara
     hennes brudtärna, så nu när det var min tur att välja tärna var jag säker på
     att hon skulle ställa upp! Carro är också geniet bakom den italiensk
     inspirerade bröllopstårtan.
-  bridesMaidImage: /img/dummy.jpg
-  bridesMaidTitle: "Min brudtärna, Carolina Alkstål"
+  bridesMaidImage: /img/carro.jpg
+  bridesMaidTitle: 'Min brudtärna, Carolina Alkstål'
   toastMadameContent: >-
     Eva Florin är barndomsvän till Emelie. Vi har gått igenom mycket
     tillsammans, från att leka kull på sexårs till frustrerande tonår och vidare
     in i vuxenvärlden. En hel livsresa! Och jag måste säga att det är lyxigt att
     få ha Eva som jobbar som ”partyplanner” som vår toastmadame.
   toastMadameImage: /img/dummy.jpg
-  toastMadameTitle: "Toastmadame, Eva Florin"
+  toastMadameTitle: 'Toastmadame, Eva Florin'
   toastMasterContent: >-
     Johan Carlsson är en god vän till oss båda och en äkta livsnjutare. Ett av
     våra starkaste minnen av Johan är när han över en middag berättar väldigt
     inlevelsefullt om sina gamla husdjur och hur de gick sina öden till mötes.
     Har ni tur kan han säkert  dela med sig av några historier.
   toastMasterImage: /img/johan.jpeg
-  toastMasterTitle: "Toastmaster, Johan Carlsson"
+  toastMasterTitle: 'Toastmaster, Johan Carlsson'
 ceremony:
   content: >-
     Både vigsel och middag kommer äga rum på Tängsta Gård i Köping.  
@@ -148,3 +148,4 @@ stay:
   title: Boende
 countdownTitle: Tid kvar till bröllopet
 ---
+

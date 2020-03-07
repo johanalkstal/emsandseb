@@ -7,45 +7,39 @@ intro:
     ## Ni är hjärtligt inbjudna till vår vigsel på Tängsta gård lördagen den 5:e
     september 2020.
 form:
-  title: Meddela oss om du kan närvara eller inte genom att fyll i ditt namn nedan
+  title: Meddela oss om du kan närvara eller inte genom att fylla i ditt namn nedan
 couple:
   content: >-
-    Vår resa började när vi träffades på våra vänners Åsa och Uffes bröllop i
+    Vår resa började när vi träffades på våra vänner Åsa och Uffes bröllop i
     juni 2014. Sebastian var toastmaster och Emelie höll tal för sin vän. Efter
     middagen pratade vi om TV-serien Doctor Who och insåg att vi hade samma
     favorit doktor (tionde doktorn). Första kyssen kom spontant senare samma dag
     i väntan på tunnelbanan i Liljeholmen.
 
 
-
-
     Vår första dejt blev av några dagar senare. Vi gick på bio, träffades efter
     jobbet torsdagen före midsommarafton vid Hötorget och såg “The fault in our
-    stars”. Efter denna dejt hänger vi ihop och i maj 2015 flyttade vi ihop.
+    stars”. Efter denna dejt var det vi två och i maj 2015 flyttade vi ihop.
 
 
-
-
-    Första resan tillsammans bar till Rom där vi båda förälskade oss i Italien.
-    Sedan dess delar vi en passion till Italiensk mat, vin och de enormt fina
-    Toscanska landskapen. En resa om året till Italien är sedan dess en
-    tradition för oss.
-
-
+    Första resan tillsammans bar av till Rom där vi båda förälskade oss i
+    Italien. Sedan dess delar vi en passion till Italiensk mat, vin och de
+    enormt fina Toscanska landskapen. En resa om året till Italien är sedan dess
+    en tradition för oss.
 
 
     Florens 2018 skulle bli en väldigt speciell semesterresa. Efter en lång varm
-    dag av bestigande av kullar och utforskande, på väg för att hitta en
+    dag med bestigande av kullar och utforskande, på väg för att hitta en
     restaurang för lite middag gick han ner på knä intill floden Arno. Hon sa ja
-    på en gång. De kysstes och förbipasserande ropade “Aguri”, italienska ordet
-    för grattis. I Florens köpte vi våra förlovningsringar och graverade dem med
-    Amore eterno (evig kärlek). Vi reste tillbaka till Florens under vintern
-    2019 för att köpa vigselringarna från samma guldsmed som gjort våra
-    förlovningsringar.
+    på en gång. De kysstes och förbipasserande ropade det italienska ordet för
+    grattis, “Aguri”. I Florens på Ponte Vecchio köpte vi våra förlovningsringar
+    och graverade dem med Amore eterno (evig kärlek). Vi reste tillbaka till
+    Florens under vintern 2019 för att köpa vigselringarna från samma guldsmed
+    som gjort våra förlovningsringar.
   image1: /img/Bild Rom.jpg
   image2: /img/Bild 2 - Redigerad.jpg
   image3: /img/Bild Chianti2.jpg
-  image4: /img/florens2.jpg
+  image4: /img/Topp bild till hemsida - Redigerad - Final.jpg
   title: Brudparet
 others:
   bestManContent: >-
@@ -53,7 +47,7 @@ others:
     från ettan i grundskolan, men det var nog först i fyran som vi faktiskt
     lärde känna varandra. Sedan dess har vi hängt tillsammans i replokaler,
     inspelningsstudior och på Jul!
-  bestManImage: /img/fredrik.jpeg
+  bestManImage: /img/Kopia av received_577491752833222 - Final.jpeg
   bestManTitle: 'Min best man, Fredrik Lundquist'
   bridesMaidContent: >-
     Carro är min syster och vän. Hon var den första i familjen som fick veta att
@@ -63,13 +57,9 @@ others:
     inspirerade bröllopstårtan.
   bridesMaidImage: /img/carro.jpg
   bridesMaidTitle: 'Min brudtärna, Carolina Alkstål'
-  toastMadameContent: >-
-    Eva Florin är barndomsvän till Emelie. Vi har gått igenom mycket
-    tillsammans, från att leka kull på sexårs till frustrerande tonår och vidare
-    in i vuxenvärlden. En hel livsresa! Och jag måste säga att det är lyxigt att
-    få ha Eva som jobbar som ”partyplanner” som vår toastmadame.
+  toastMadameContent: Placeholder
   toastMadameImage: /img/dummy.jpg
-  toastMadameTitle: 'Toastmadame, Eva Florin'
+  toastMadameTitle: 'Toastmaster, '
   toastMasterContent: >-
     Johan Carlsson är en god vän till oss båda och en äkta livsnjutare. Ett av
     våra starkaste minnen av Johan är när han över en middag berättar väldigt
@@ -79,16 +69,20 @@ others:
   toastMasterTitle: 'Toastmaster, Johan Carlsson'
 ceremony:
   content: >-
-    Både vigsel och middag kommer äga rum på Tängsta Gård i Köping.  
+    Både vigsel och middag kommer äga rum på Tängsta Gård i Köping. Vigseln sker
+    utomhus vid bra väder - Håll tummarna! 
 
 
-    Vigsel börjar kl. 14.30   
+    Vigseln börjar kl. 14.30 
 
 
     Middag ca kl.16.30-19.00
 
 
-    Efter middagen blir det festligheter. Det kommer finnas bar som har
+    Klädkod: Kavaj
+
+
+    Efter middagen blir det festligheter. Det kommer att finnas bar med
     försäljning av dryck till självkostnadspris.
 
 
@@ -96,10 +90,12 @@ ceremony:
     att hinna ta den korta promenaden från gården till vigselplatsen.
 
 
-    Klädkod: Kavaj
+    Vill ni hålla tal för brudparet? Meddela vår Toastmaster Johan Carlsson via
+    mail på johan.carlsson1@gmail.com. Ange hur ni brudparet samt ungefärlig
+    längd på talet.  
 
 
-    Är ni taggade? Det är vi! Ni kan redan nu följa vår officiell hashtag:
+    Är ni taggade? Det är vi! Ni kan redan nu följa vår officiella hashtag:
     #ESbröllop
   title: Vigsel och middag
 location:

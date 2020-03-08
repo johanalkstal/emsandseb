@@ -17,9 +17,9 @@ couple:
     i väntan på tunnelbanan i Liljeholmen.
 
 
-    Vår första dejt blev av några dagar senare. Vi gick på bio, träffades efter
-    jobbet torsdagen före midsommarafton vid Hötorget och såg “The fault in our
-    stars”. Efter denna dejt var det vi två och i maj 2015 flyttade vi ihop.
+    Vår första dejt blev av några dagar senare. Vi träffades efter jobbet
+    torsdagen före midsommarafton vid Hötorget för att se filmen “The fault in
+    our stars”. Efter denna dejt var det vi två och i maj 2015 flyttade vi ihop.
 
 
     Första resan tillsammans bar av till Rom där vi båda förälskade oss i
@@ -52,9 +52,10 @@ others:
   bridesMaidContent: >-
     Carro är min syster och vän. Hon var den första i familjen som fick veta att
     jag hade träffat Sebastian. När Carro gifte sig så fick jag äran att vara
-    hennes brudtärna, så nu när det var min tur att välja tärna var jag säker på
-    att hon skulle ställa upp! Carro är också geniet bakom den italiensk
-    inspirerade bröllopstårtan.
+    hennes brudtärna, så nu när det var min tur att välja tärna visste jag
+    precis vem jag skulle fråga! Hon är en väldigt kreativ och ärlig person som
+    kommer vara perfekt att ha nära på bröllopsdagen. Carro är också geniet
+    bakom den italiensk inspirerade bröllopstårtan.
   bridesMaidImage: /img/carro.jpg
   bridesMaidTitle: 'Min brudtärna, Carolina Alkstål'
   toastMadameContent: Placeholder

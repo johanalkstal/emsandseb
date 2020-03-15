@@ -70,8 +70,8 @@ others:
   toastMasterTitle: 'Toastmaster, Johan Carlsson'
 ceremony:
   content: >-
-    Både vigsel och middag kommer äga rum på Tängsta Gård i Köping. Vigseln sker
-    utomhus vid bra väder - Håll tummarna! 
+    Både vigsel och middag kommer att äga rum på Tängsta Gård i Köping. Vigseln
+    sker utomhus vid bra väder - Håll tummarna! 
 
 
     Vigseln börjar kl. 14.30 
@@ -80,20 +80,24 @@ ceremony:
     Middag ca kl.16.30-19.00
 
 
-    Klädkod: Kavaj
+    Klädkod: Kavaj 
 
 
     Efter middagen blir det festligheter. Det kommer att finnas bar med
-    försäljning av dryck till självkostnadspris.
+    försäljning av dryck till självkostnadspris. 
 
 
     Det är bra om alla gäster är på plats minst 15 min före vigselns start för
     att hinna ta den korta promenaden från gården till vigselplatsen.
 
 
+    Vi vill fira vår bröllopsdag med våra vuxna vänner och ber er därför lämna
+    era små charmtroll hemma.
+
+
     Vill ni hålla tal för brudparet? Meddela vår Toastmaster Johan Carlsson via
-    mail på johan.carlsson1@gmail.com. Ange hur ni brudparet samt ungefärlig
-    längd på talet.  
+    mail på johan.carlsson1@gmail.com. Ange hur ni känner brudparet samt
+    ungefärlig längd på talet.  
 
 
     Är ni taggade? Det är vi! Ni kan redan nu följa vår officiella hashtag:

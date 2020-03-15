@@ -62,10 +62,15 @@ others:
   toastMadameImage: /img/dummy.jpg
   toastMadameTitle: 'Toastmaster, '
   toastMasterContent: >-
-    Johan Carlsson är en god vän till oss båda och en äkta livsnjutare. Ett av
-    våra starkaste minnen av Johan är när han över en middag berättar väldigt
+    Johan Carlsson är en äkta livsnjutare och en god vän till mig och Emelie.
+    Jag träffade Johan genom Fredrik under studieåren på Södertörns Högskola.
+    Vår vänskap började över en kopp kaffe och en skvätt OP på vändplanen i
+    Västertorp.
+
+
+    Emelies första möte med Johan är när han över en middag berättar väldigt
     inlevelsefullt om sina gamla husdjur och hur de gick sina öden till mötes.
-    Har ni tur kan han säkert  dela med sig av några historier.
+    Har ni tur kan han säkert dela med sig av några historier!
   toastMasterImage: /img/johan.jpeg
   toastMasterTitle: 'Toastmaster, Johan Carlsson'
 ceremony:

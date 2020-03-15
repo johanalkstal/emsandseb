@@ -70,29 +70,36 @@ others:
   toastMasterTitle: 'Toastmaster, Johan Carlsson'
 ceremony:
   content: >-
-    Både vigsel och middag kommer att äga rum på Tängsta Gård i Köping. Vigseln
-    sker utomhus vid bra väder - Håll tummarna! 
-
-
-    Vigseln börjar kl. 14.30 
-
-
-    Middag ca kl.16.30-19.00
-
-
-    Klädkod: Kavaj 
-
-
-    Efter middagen blir det festligheter. Det kommer att finnas bar med
-    försäljning av dryck till självkostnadspris. 
+    Både vigsel och middag äger rum på Tängsta Gård i Köping. Vigseln sker
+    utomhus vid bra väder - Håll tummarna! 
 
 
     Det är bra om alla gäster är på plats minst 15 min före vigselns start för
     att hinna ta den korta promenaden från gården till vigselplatsen.
 
 
-    Vi vill fira vår bröllopsdag med våra vuxna vänner och ber er därför lämna
-    era små charmtroll hemma.
+    Vigseln börjar kl. 14.30 
+
+
+    Middagen serveras ca kl.16.30
+
+
+    Klädkod: Kavaj 
+
+
+    Middagen serveras i Italiensk tappning med 4 rätter, Apperitivo, Primo,
+    Secondi och Dolce. Efter middagen blir det dans och festligheter in på
+    småtimmarna. Det finns då bar med försäljning av dryck till
+    självkostnadspris. 
+
+
+    Vi önskar att fira vår bröllopsdag med våra vuxna vänner och ber er därför
+    lämna era små charmtroll hemma.
+
+
+    Gåvor eller presenter är inte nödvändiga. Vill ni ändå uppvakta brudparet
+    är  upplevelser vi kan göra tillsammas och bidrag till bröllopsresan
+    uppskattade.
 
 
     Vill ni hålla tal för brudparet? Meddela vår Toastmaster Johan Carlsson via
@@ -106,8 +113,8 @@ ceremony:
 location:
   content: >-
     Den närmaste tågstationen är Köping. Från centrala Köping kan man ta sig
-    resten av vägen med bil eller taxi. Det tar ca 15 min med bil från stationen
-    till gården.
+    resten av vägen med bil eller taxi. Det tar ca 15 minuter med bil från
+    stationen till gården.
 
 
     Lokala taxibolaget är[ Västerås taxi](https://taxivasteras.se/) och

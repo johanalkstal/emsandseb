@@ -23,16 +23,28 @@ class EmailForm extends React.Component {
 
   handleSubmit = e => {
     e.preventDefault();
+
     const form = e.target;
-    fetch("/", {
+
+    fetch("/.netlify/functions/guests", {
       method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
-        "form-name": form.getAttribute("name"),
-        ...this.state
-      })
+      body: { name: form.elements.name.value }
     })
-      .then(() => this.setState({ submitted: true }))
+      .then(response => response.json())
+      .then(isGuest => {
+        if (!isGuest) {
+          throw Error("Not a guest");
+        }
+
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: encode({
+            "form-name": form.getAttribute("name"),
+            ...this.state
+          })
+        }).then(() => this.setState({ submitted: true }));
+      })
       .catch(error => {
         this.setState({ error: true });
         console.error(error);
@@ -55,6 +67,7 @@ class EmailForm extends React.Component {
               >
                 <input name="bot-field" />
                 <input name="name" />
+                <input name="email" />
                 <input name="attending" />
                 <input name="message" />
                 <input name="food" />
@@ -88,6 +101,14 @@ class EmailForm extends React.Component {
                 onChange={this.handleChange}
                 id={"name"}
                 required={true}
+              />
+
+              <label htmlFor={"email"}>E-post</label>
+              <input
+                type={"email"}
+                name={"email"}
+                onChange={this.handleChange}
+                id={"email"}
               />
 
               <div className={styles.radio}>

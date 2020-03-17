@@ -233,14 +233,14 @@ class EmailForm extends React.Component {
         {submitted && <p>Tack! Ditt meddelande har skickats</p>}
 
         {submitError && (
-          <p className="error">
+          <p className={styles.error}>
             Hoppsan! Något gick fel med ditt meddelande. Hör av dig till
             emelie.alkstal@gmail.com för vidare hjälp.
           </p>
         )}
 
         {notAGuest && (
-          <p className="error">
+          <p className={styles.error}>
             Hoppsan! Namnet du har angivit finns inte med i gästlistan. Hör av
             dig till emelie.alkstal@gmail.com för vidare hjälp.
           </p>

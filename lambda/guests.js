@@ -67,13 +67,16 @@ const guestList = [
 ];
 
 module.exports.handler = async function(event, context) {
-  const guestName = event.body;
+  const guestName = JSON.parse(event.body).name;
+  console.log("Guest name: ", guestName);
+
+  const isAGuest =
+    guestList.find(guest => guest.toLowerCase() === guestName.toLowerCase())
+      .length > 0;
 
   return {
     statusCode: 200,
-    body:
-      guestList.find(guest => guest.toLowerCase() === guestName.toLowerCase()) >
-      0
+    body: isAGuest
   };
 };
 

@@ -68,15 +68,19 @@ const guestList = [
 
 module.exports.handler = async function(event, context) {
   const guestName = JSON.parse(event.body).name;
-  console.log("Guest name: ", guestName);
+  console.log("Guest name:", guestName);
 
   const isAGuest =
     guestList.find(guest => guest.toLowerCase() === guestName.toLowerCase())
       .length > 0;
 
+  const body = JSON.stringify(isAGuest);
+
+  console.log("Body:", body);
+
   return {
     statusCode: 200,
-    body: isAGuest
+    body
   };
 };
 

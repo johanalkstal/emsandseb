@@ -12,7 +12,8 @@ class EmailForm extends React.Component {
     super(props);
 
     this.state = {
-      error: false,
+      notAGuest: false,
+      submitError: false,
       submitted: false
     };
   }
@@ -33,7 +34,7 @@ class EmailForm extends React.Component {
       .then(response => response.json())
       .then(isGuest => {
         if (!isGuest) {
-          throw Error("Not a guest");
+          this.setState({ notAGuest: true });
         }
 
         fetch("/", {
@@ -43,17 +44,23 @@ class EmailForm extends React.Component {
             "form-name": form.getAttribute("name"),
             ...this.state
           })
-        }).then(() => this.setState({ submitted: true }));
+        }).then(() =>
+          this.setState({
+            notAGuest: false,
+            submitError: false,
+            submitted: true
+          })
+        );
       })
       .catch(error => {
-        this.setState({ error: true });
+        this.setState({ submitError: true });
         console.error(error);
       });
   };
 
   render() {
     const { form } = this.props;
-    const { error, submitted } = this.state;
+    const { notAGuest, submitError, submitted } = this.state;
 
     return (
       <div className={styles.form}>
@@ -224,7 +231,19 @@ class EmailForm extends React.Component {
 
         {submitted && <p>Tack! Ditt meddelande har skickats</p>}
 
-        {error && <p>Oj, det här gick inte som tänkt. Prova igen</p>}
+        {submitError && (
+          <p className="error">
+            Hoppsan! Något gick fel med ditt meddelande. Hör av dig till
+            emelie.alkstal@gmail.com för vidare hjälp.
+          </p>
+        )}
+
+        {notAGuest && (
+          <p className="error">
+            Hoppsan! Namnet du har angivit finns inte med i gästlistan. Hör av
+            dig till emelie.alkstal@gmail.com för vidare hjälp.
+          </p>
+        )}
       </div>
     );
   }

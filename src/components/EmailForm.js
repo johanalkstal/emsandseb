@@ -35,6 +35,7 @@ class EmailForm extends React.Component {
       .then(isGuest => {
         if (!isGuest) {
           this.setState({ notAGuest: true });
+          return;
         }
 
         fetch("/", {

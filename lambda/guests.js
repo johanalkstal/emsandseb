@@ -67,12 +67,13 @@ const guestList = [
 ];
 
 module.exports.handler = async function(event, context) {
+  console.log("Event Body", event.body);
   const guestName = JSON.parse(event.body).name;
   console.log("Guest name:", guestName);
 
-  const isAGuest =
-    guestList.find(guest => guest.toLowerCase() === guestName.toLowerCase())
-      .length > 0;
+  const isAGuest = guestList.some(
+    guest => guest.toLowerCase() === guestName.toLowerCase()
+  );
 
   const body = JSON.stringify(isAGuest);
 

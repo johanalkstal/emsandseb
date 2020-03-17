@@ -1,6 +1,74 @@
 import React, { Fragment } from "react";
 import styles from "./EmailForm.module.sass";
 
+const guestList = [
+  "Carin Alkstål",
+  "Tomas Alkstål",
+  "Carolina Alkstål",
+  "Johan Alkstål",
+  "Alicia Alkstål",
+  "Elvin Alkstål",
+  "Calle Alkstål",
+  "Carl-Johan Alkstål",
+  "Emelie Eriksson",
+  "Eva Florin",
+  "Åsa Brandt",
+  "Uffe Brandt",
+  "Ulf Brandt",
+  "Engely Olivares",
+  "Esteban Olivares",
+  "Gunnar Carlsson",
+  "Anna Pettersson",
+  "Anna Selin",
+  "Per Selin",
+  "Emmy Selin",
+  "Frida Selin",
+  "Åke Carlson",
+  "Åke Carlsson",
+  "Erik Gustafsson",
+  "Victoria Rönn",
+  "Stefan Colazio",
+  "Sandra Aidenpää",
+  "Nils-Åke Alkstål",
+  "Nisse Alkstål",
+  "Gunvor Alkstål",
+  "Helene Marcus",
+  "Heléne Marcus",
+  "Fredrik Lundquist",
+  "Johan Carlsson",
+  "Katarina Johnson",
+  "Jennifer Bergman",
+  "Captain Wedding",
+  "Barbro Eriksson",
+  "Kjell Eriksson",
+  "Lena März",
+  "Jakob März",
+  "Roger Eriksson",
+  "Hui Li",
+  "Cecilia Eriksson",
+  "Johan Berglund",
+  "Märta Nilsson",
+  "Ingemar Nilsson",
+  "Nils-Åke Nilsson",
+  "Anette Nilsson",
+  "Per-Olof Nilsson",
+  "Ylva Nilsson",
+  "Lena Alkstål",
+  "Lena Alkstål Åslund",
+  "Ulf Åslund",
+  "Uffe Åslund",
+  "Jan Alkstål",
+  "Karin Alkstål",
+  "Sara Dahl",
+  "Andreas Lindström",
+  "Christer Alkstål",
+  "Alexander Alkstål",
+  "Pia Jakobsson",
+  "Per Alkstål",
+  "Margareta Alkstål",
+  "Jörgen Marcus"
+];
+
 function encode(data) {
   return Object.keys(data)
     .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
@@ -27,37 +95,67 @@ class EmailForm extends React.Component {
 
     const form = e.target;
 
-    fetch("/.netlify/functions/guests", {
-      method: "POST",
-      body: { name: form.elements.name.value }
-    })
-      .then(response => response.json())
-      .then(isGuest => {
-        if (!isGuest) {
-          this.setState({ notAGuest: true });
-          return;
-        }
+    const isGuest = guestList.some(
+      guest => guest.toLowerCase() === form.elements.name.value.toLowerCase()
+    );
 
-        fetch("/", {
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: encode({
-            "form-name": form.getAttribute("name"),
-            ...this.state
-          })
-        }).then(() =>
-          this.setState({
-            notAGuest: false,
-            submitError: false,
-            submitted: true
-          })
-        );
+    if (!isGuest) {
+      this.setState({ notAGuest: true });
+      return;
+    }
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": form.getAttribute("name"),
+        ...this.state
       })
+    })
+      .then(() =>
+        this.setState({
+          notAGuest: false,
+          submitError: false,
+          submitted: true
+        })
+      )
       .catch(error => {
         this.setState({ submitError: true });
         console.error(error);
       });
   };
+
+  //   fetch("/.netlify/functions/guests", {
+  //     method: "POST",
+  //     body: { name: form.elements.name.value }
+  //   })
+  //     .then(response => response.json())
+  //     .then(isGuest => {
+  //       if (!isGuest) {
+  //         this.setState({ notAGuest: true });
+  //         return;
+  //       }
+
+  //       fetch("/", {
+  //         method: "POST",
+  //         headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //         body: encode({
+  //           "form-name": form.getAttribute("name"),
+  //           ...this.state
+  //         })
+  //       }).then(() =>
+  //         this.setState({
+  //           notAGuest: false,
+  //           submitError: false,
+  //           submitted: true
+  //         })
+  //       );
+  //     })
+  //     .catch(error => {
+  //       this.setState({ submitError: true });
+  //       console.error(error);
+  //     });
+  // };
 
   render() {
     const { form } = this.props;

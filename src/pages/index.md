@@ -65,8 +65,8 @@ others:
 
     Calle är den som alltid har något på gång och nu har han snällt tackat ja
     till att hjälpa oss på vår bröllopsdag.
-  toastMadameImage: /img/dummy.jpg
-  toastMadameTitle: 'Toastmaster, '
+  toastMadameImage: /img/Callewebbis.jpg
+  toastMadameTitle: 'Toastmaster, Calle Alkstål'
   toastMasterContent: >-
     Johan Carlsson är en äkta livsnjutare och en god vän till mig och Emelie.
     Jag träffade Johan genom Fredrik under studieåren på Södertörns Högskola.

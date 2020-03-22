@@ -197,7 +197,7 @@ export class IndexPageTemplate extends React.Component {
         ></div>
 
         <h2>{others.toastMadameTitle}</h2>
-        {/* <div className={styles.peopleImages}>
+        <div className={styles.peopleImages}>
           <img
             src={
               !!others.toastMadameImage.childImageSharp
@@ -205,7 +205,7 @@ export class IndexPageTemplate extends React.Component {
                 : others.toastMadameImage
             }
           />
-        </div> */}
+        </div>
         <div
           className={styles.content}
           dangerouslySetInnerHTML={{

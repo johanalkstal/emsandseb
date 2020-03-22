@@ -58,7 +58,13 @@ others:
     bakom den italiensk inspirerade bröllopstårtan.
   bridesMaidImage: /img/carro.jpg
   bridesMaidTitle: 'Min brudtärna, Carolina Alkstål'
-  toastMadameContent: Placeholder
+  toastMadameContent: >-
+    Calle är min efterlängtade bror som jag beställde när jag var fem år och
+    äntligen fick när jag fyllt sex år. Vi har byggt lego, spelat guitar hero
+    och bytt av varandra i lägenheten i Aspudden.\
+
+    Calle är den som alltid har något på gång och nu har han snällt tackat ja
+    till att hjälpa oss på vår bröllopsdag.
   toastMadameImage: /img/dummy.jpg
   toastMadameTitle: 'Toastmaster, '
   toastMasterContent: >-
